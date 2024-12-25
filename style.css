@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-btn {
+    width: 25%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+#html_div {
+    margin-top: 20px;
+}
+
+.js_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.js_div.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+.js_check {
+    margin-right: 10px;
+}
+
+.js_delete {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.js_delete:hover {
+    color: #c82333;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .todo-container {
+        width: 90%;
+    }
+
+    input {
+        width: 65%;
+    }
+
+    .add-btn {
+        width: 30%;
+    }
+}
